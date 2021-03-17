@@ -18,6 +18,10 @@
       "sagebio": [
         "dist/sagebio/sagebio",
         "dist/sagebio"
+      ],
+      "sagebio-angular": [
+        "dist/sagebio-angular/sagebio-angular",
+        "dist/sagebio-angular"
       ]
     },
     "target": "es2015",
