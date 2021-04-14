@@ -1,8 +1,8 @@
 # Sage Bionetworks library for Angular
 
-Angular version: 11.2.4
-Typescript: 4.1.5
-RxJS: 6.6.6
+- Angular version: 11.2.4
+- Typescript: 4.1.5
+- RxJS: 6.6.6
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
 
