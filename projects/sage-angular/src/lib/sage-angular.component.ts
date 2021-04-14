@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-sagebio-angular',
+  selector: 'lib-sage-angular',
   template: `
     <p>
-      sagebio-angular works!
+      sage-angular works!
     </p>
   `,
   styles: [
   ]
 })
-export class SagebioAngularComponent implements OnInit {
+export class SageAngularComponent implements OnInit {
 
   constructor() { }
 

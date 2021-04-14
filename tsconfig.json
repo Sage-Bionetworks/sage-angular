@@ -15,13 +15,13 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
-      "sagebio": [
-        "dist/sagebio/sagebio",
-        "dist/sagebio"
+      "sage": [
+        "dist/sage/sage",
+        "dist/sage"
       ],
-      "sagebio-angular": [
-        "dist/sagebio-angular/sagebio-angular",
-        "dist/sagebio-angular"
+      "sage-angular": [
+        "dist/sage-angular/sage-angular",
+        "dist/sage-angular"
       ]
     },
     "target": "es2015",

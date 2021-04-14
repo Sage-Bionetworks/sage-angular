@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SagebioAngularComponent } from './sagebio-angular.component';
+import { SageAngularComponent } from './sage-angular.component';
 
-describe('SagebioAngularComponent', () => {
-  let component: SagebioAngularComponent;
-  let fixture: ComponentFixture<SagebioAngularComponent>;
+describe('SageAngularComponent', () => {
+  let component: SageAngularComponent;
+  let fixture: ComponentFixture<SageAngularComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SagebioAngularComponent ]
+      declarations: [ SageAngularComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SagebioAngularComponent);
+    fixture = TestBed.createComponent(SageAngularComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

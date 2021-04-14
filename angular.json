@@ -3,38 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sagebio-angular": {
+    "sage-angular": {
       "projectType": "library",
-      "root": "projects/sagebio-angular",
-      "sourceRoot": "projects/sagebio-angular/src",
+      "root": "projects/sage-angular",
+      "sourceRoot": "projects/sage-angular/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/sagebio-angular/tsconfig.lib.json",
-            "project": "projects/sagebio-angular/ng-package.json"
+            "tsConfig": "projects/sage-angular/tsconfig.lib.json",
+            "project": "projects/sage-angular/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/sagebio-angular/tsconfig.lib.prod.json"
+              "tsConfig": "projects/sage-angular/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/sagebio-angular/src/test.ts",
-            "tsConfig": "projects/sagebio-angular/tsconfig.spec.json",
-            "karmaConfig": "projects/sagebio-angular/karma.conf.js"
+            "main": "projects/sage-angular/src/test.ts",
+            "tsConfig": "projects/sage-angular/tsconfig.spec.json",
+            "karmaConfig": "projects/sage-angular/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/sagebio-angular/tsconfig.lib.json",
-              "projects/sagebio-angular/tsconfig.spec.json"
+              "projects/sage-angular/tsconfig.lib.json",
+              "projects/sage-angular/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -44,5 +44,5 @@
       }
     }
   },
-  "defaultProject": "sagebio"
+  "defaultProject": "sage"
 }

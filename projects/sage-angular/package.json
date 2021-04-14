@@ -1,5 +1,5 @@
 {
-  "name": "@sage-bionetworks/sagebio-angular",
+  "name": "@sage-bionetworks/sage-angular",
   "version": "0.1.0",
   "peerDependencies": {
     "@angular/common": "^11.2.5",

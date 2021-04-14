@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, '../../coverage/sagebio-angular'),
+      dir: require('path').join(__dirname, '../../coverage/sage-angular'),
       subdir: '.',
       reporters: [
         { type: 'html' },
