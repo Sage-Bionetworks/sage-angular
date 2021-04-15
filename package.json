@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "analyze": "ng build --prod --stats-json --project sage-angular-demo && webpack-bundle-analyzer ./dist/sage-angular-demo/stats.json"
   },
   "private": true,
   "dependencies": {
