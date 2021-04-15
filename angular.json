@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/sage-angular",
       "sourceRoot": "projects/sage-angular/src",
-      "prefix": "lib",
+      "prefix": "sage",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
