@@ -15,14 +15,14 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
-      "sage": [
-        "dist/sage/sage",
-        "dist/sage"
+      "@sage-bionetworks/sage-angular/*": [
+        "projects/sage-angular/*",
+        "projects/sage-angular"
       ],
-      "sage-angular": [
-        "dist/sage-angular/sage-angular",
+      "@sage-bionetworks/sage-angular": [
+        "dist/sage-angular/*",
         "dist/sage-angular"
-      ]
+      ],
     },
     "target": "es2015",
     "module": "es2020",
