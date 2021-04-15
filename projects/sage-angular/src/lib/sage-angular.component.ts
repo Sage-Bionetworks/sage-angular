@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-sage-angular',
+  selector: 'sage-angular',
   template: `
     <p>
       sage-angular works!
