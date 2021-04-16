@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SageAngularComponent } from './sage-angular.component';
+import { PlopComponent } from './plop.component';
 
-describe('SageAngularComponent', () => {
-  let component: SageAngularComponent;
-  let fixture: ComponentFixture<SageAngularComponent>;
+describe('PlopComponent', () => {
+  let component: PlopComponent;
+  let fixture: ComponentFixture<PlopComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SageAngularComponent ]
+      declarations: [ PlopComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SageAngularComponent);
+    fixture = TestBed.createComponent(PlopComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
