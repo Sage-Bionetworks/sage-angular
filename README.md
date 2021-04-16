@@ -34,7 +34,7 @@ npm install @sage-bionetworks/sage-angular --save
 
 Run `npm ci` to install the npm dependencies of this project.
 
-Run `ng serve sage-angular-demo` for a dev server. Navigate to
+Run `npm run start` for a dev server. Navigate to
 `http://localhost:4200/`. The app will automatically reload if you change any of
 the source files.
 
@@ -46,7 +46,7 @@ convention, the content of a feature folder should stay as flat as possible and
 thus avoid sub-folders. An example of this approach is provided by the library
 [Angular Material].
 
-### Adding a feature
+### Adding a library feature
 
 We use the Angular schematic [ng-samurai] to add new feature to the library:
 
