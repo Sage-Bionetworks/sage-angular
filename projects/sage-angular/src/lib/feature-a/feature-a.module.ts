@@ -6,6 +6,7 @@ import { FeatureAComponent } from './feature-a.component';
   declarations: [FeatureAComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [FeatureAComponent]
 })
 export class FeatureAModule { }
