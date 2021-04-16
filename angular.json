@@ -70,7 +70,8 @@
             "styles": [
               "projects/sage-angular-demo/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "preserveSymlinks": true
           },
           "configurations": {
             "production": {
