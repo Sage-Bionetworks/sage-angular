@@ -23,6 +23,9 @@
         "dist/sage-angular/*",
         "dist/sage-angular"
       ],
+      "@angular/*": [
+        "node_modules/@angular/*"
+      ],
     },
     "target": "es2015",
     "module": "es2020",
