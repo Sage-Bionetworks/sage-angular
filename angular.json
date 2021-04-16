@@ -168,5 +168,5 @@
   "cli": {
     "analytics": false
   },
-  "defaultProject": "sage"
+  "defaultProject": "sage-angular"
 }
