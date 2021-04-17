@@ -48,18 +48,15 @@ thus avoid sub-folders. An example of this approach is provided by the library
 
 ### Adding a library feature
 
-We use the Angular schematic [ng-samurai] to add new feature to the library:
+We use the Angular schematic [ng-samurai] to add new feature to the library. The
+command below will perform the following actions:
+
+- Create a new folder with the provided name.
+- Create a (`module`, `component`, `index.ts`, `public-api.ts`, `package.json`).
+- Export the module and the component from the `public-api.ts`.
 
 ```console
-$ ng g ng-samurai:generate-subentry --project sage-angular feature-x
-CREATE projects/sage-angular/src/lib/feature-d/index.ts (30 bytes)
-CREATE projects/sage-angular/src/lib/feature-d/package.json (105 bytes)
-CREATE projects/sage-angular/src/lib/feature-d/public-api.ts (75 bytes)
-CREATE projects/sage-angular/src/lib/feature-d/feature-d.module.ts (270 bytes)
-CREATE projects/sage-angular/src/lib/feature-d/feature-d.component.css (0 bytes)
-CREATE projects/sage-angular/src/lib/feature-d/feature-d.component.html (24 bytes)
-CREATE projects/sage-angular/src/lib/feature-d/feature-d.component.spec.ts (641 bytes)
-CREATE projects/sage-angular/src/lib/feature-d/feature-d.component.ts (287 bytes)
+ng g ng-samurai:generate-subentry --project sage-angular feature-a
 ```
 
 Options can be passed to the command to disable the generation of certain types
@@ -68,7 +65,7 @@ component. Alternatively, remove the artifacts that are not needed after the
 generation of the feature.
 
 The file `projects/sage-angular/src/public-apis.ts` lists the features that are
-available to consumer applications. Add the line `export * from '@sage-bionetworks/sage-angular/src/lib/feature-x';` to export the feature.
+available to consumer applications. Add the line `export * from '@sage-bionetworks/sage-angular/src/lib/feature-a';` to export the feature.
 
 ### Adding artifacts to a feature
 
@@ -77,18 +74,18 @@ Angular artifact where `<artifact>` takes a value in
 `directive|pipe|service|class|guard|interface|enum|module`. The option
 `--project <project>` specifies the project the artifact should be added to.
 
-For example, run this command to add a service to the feature `feature-x`:
+For example, run this command to add a service to the feature `feature-a`:
 
-    ng generate service --project sage-angular feature-x/feature-x
+    ng generate service --project sage-angular feature-a/feature-a
 
-Run this command to add a component to the feature `feature-x`:
+Run this command to add a component to the feature `feature-a`:
 
-    ng generate component --project sage-angular feature-x/feature-x
+    ng generate component --project sage-angular feature-a/feature-a
 
 > This library is configured to add the prefix `sage-` to the selector of
 > components generated via `ng generate component`. For example, the selector of
-> the component `feature-x` is `sage-feature-x` and this component will be
-> imported in an HTML document with `<sage-feature-x></sage-feature-x>`.
+> the component `feature-a` is `sage-feature-a` and this component will be
+> imported in an HTML document with `<sage-feature-a></sage-feature-a>`.
 
 The entry point file `public-api.ts` of the feature must include all the
 artifacts that are offered by the feature. The entry point file must be updated
