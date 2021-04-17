@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatSliderModule } from '@angular/material/slider';
 
+import { GithubButtonModule } from '@sage-bionetworks/sage-angular/src/lib/github-button';
 import { HelloWorldModule } from '@sage-bionetworks/sage-angular/src/lib/hello-world';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +19,7 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     MatSliderModule,
     AppRoutingModule,
+    GithubButtonModule,
     HelloWorldModule
   ],
   providers: [],
