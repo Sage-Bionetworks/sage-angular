@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./hello-world.component.scss']
 })
 export class HelloWorldComponent implements OnInit {
-  @Input() name: string = 'world';
+  @Input() name = 'world';
 
   constructor() {}
 
