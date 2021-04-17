@@ -1,21 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { FeatureAModule } from '@sage-bionetworks/sage-angular/src/lib/feature-a';
+import { HelloWorldModule } from '@sage-bionetworks/sage-angular/src/lib/hello-world';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PlopComponent } from './plop/plop.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PlopComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FeatureAModule
+    HelloWorldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
