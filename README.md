@@ -51,9 +51,9 @@ thus avoid sub-folders. An example of this approach is provided by the library
 We use the Angular schematic [ng-samurai] to add new feature to the library. The
 command below will perform the following actions:
 
-- Create a new folder with the provided name.
-- Create a (`module`, `component`, `index.ts`, `public-api.ts`, `package.json`).
-- Export the module and the component from the `public-api.ts`.
+- Create a new folder with the provided name
+- Create a (`module`, `component`, `index.ts`, `public-api.ts`, `package.json`)
+- Export the module and the component from the `public-api.ts`
 
 ```console
 ng g ng-samurai:generate-subentry --project sage-angular feature-a
