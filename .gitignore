@@ -5,6 +5,7 @@ bazel-*
 test-project-host-*
 dist/
 dist-schema/
+documentation.json
 
 # IDEs
 jsconfig.json
