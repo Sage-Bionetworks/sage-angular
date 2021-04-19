@@ -12,7 +12,7 @@
     "analyze": "ng build --prod --project sage-angular-demo --stats-json && webpack-bundle-analyzer ./dist/sage-angular-demo/stats.json",
     "madge": "madge projects/sage-angular/src/public-api.ts --ts-config tsconfig.json --image graph.png",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
-    "storybook": "npm run docs:json && start-storybook -p 6006",
+    "storybook": "npm run docs:json && start-storybook -p 6006 --ci --static-dir ./node_modules/@angular/material/prebuilt-themes",
     "build-storybook": "npm run docs:json && build-storybook"
   },
   "private": true,
@@ -39,6 +39,7 @@
     "@compodoc/compodoc": "^1.1.11",
     "@storybook/addon-actions": "^6.2.8",
     "@storybook/addon-essentials": "^6.2.8",
+    "@storybook/addon-knobs": "^6.2.8",
     "@storybook/addon-links": "^6.2.8",
     "@storybook/angular": "^6.2.8",
     "@types/jasmine": "~3.6.0",
