@@ -1,7 +1,7 @@
 # Sage Bionetworks library for Angular
 
 <!-- [![GitHub Release](https://img.shields.io/github/release/Sage-Bionetworks/sage-angular.svg?include_prereleases&color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/Sage-Bionetworks/sage-angular/releases) -->
-[![GitHub CI](https://img.shields.io/github/workflow/status/Sage-Bionetworks/sage-angular/ci.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/Sage-Bionetworks/sage-angular/actions)
+[![GitHub CI](https://img.shields.io/github/workflow/status/Sage-Bionetworks/sage-angular/CI.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/Sage-Bionetworks/sage-angular/actions)
 [![GitHub License](https://img.shields.io/github/license/Sage-Bionetworks/sage-angular.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/Sage-Bionetworks/sage-angular/blob/main/LICENSE)
 
 Library of reusable Angular artifacts used in Sage Bionetworks projects
