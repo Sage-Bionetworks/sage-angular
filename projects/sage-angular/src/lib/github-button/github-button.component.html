@@ -1,1 +1,3 @@
-<button mat-raised-button (click)="onClick.emit($event)">GitHub</button>
+<a mat-button
+    [color]="color"
+    (click)="onClick.emit($event)">{{label}}</a>
