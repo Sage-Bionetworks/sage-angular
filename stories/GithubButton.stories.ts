@@ -29,7 +29,7 @@ Basic.args = {
   color: ''
 };
 
-export const Raised = Template.bind({});
-Raised.args = {
-  label: 'GitHub',
-};
+// export const Raised = Template.bind({});
+// Raised.args = {
+//   label: 'GitHub',
+// };
