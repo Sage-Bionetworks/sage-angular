@@ -5,6 +5,8 @@ bazel-*
 test-project-host-*
 dist/
 dist-schema/
+documentation.json
+storybook-static/
 
 # IDEs
 jsconfig.json
