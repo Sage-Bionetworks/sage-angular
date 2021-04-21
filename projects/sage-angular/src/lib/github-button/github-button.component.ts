@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'sage-github-button',
@@ -6,9 +6,8 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./github-button.component.scss']
 })
 export class GithubButtonComponent implements OnInit {
-  @Input() label = "GitHub";
-  @Input() color = "";
-  @Output() onClick = new EventEmitter<Event>();
+  @Input() label = 'GitHub';
+  @Input() color = '';
 
   constructor() {}
 
