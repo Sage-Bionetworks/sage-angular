@@ -65,7 +65,12 @@
             "aot": true,
             "assets": [
               "projects/sage-angular-demo/src/favicon.ico",
-              "projects/sage-angular-demo/src/assets"
+              "projects/sage-angular-demo/src/assets",
+              {
+                "glob": "**/*.@(svg)",
+                "input": "projects/sage-angular/src/assets/images",
+                "output": "images"
+              }
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
@@ -130,7 +135,12 @@
             "karmaConfig": "projects/sage-angular-demo/karma.conf.js",
             "assets": [
               "projects/sage-angular-demo/src/favicon.ico",
-              "projects/sage-angular-demo/src/assets"
+              "projects/sage-angular-demo/src/assets",
+              {
+                "glob": "**/*.@(svg)",
+                "input": "projects/sage-angular/src/assets/images",
+                "output": "images"
+              }
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",

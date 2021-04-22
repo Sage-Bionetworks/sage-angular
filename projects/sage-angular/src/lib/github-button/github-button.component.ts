@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class GithubButtonComponent implements OnInit {
   @Input() label = 'GitHub';
   @Input() color = '';
+  @Input() href = 'https://github.com';
 
   constructor() {}
 
