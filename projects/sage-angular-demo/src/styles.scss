@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import './app-theme';
 @import '@sage-bionetworks/sage-angular/src/lib-theme';
+// @import '@sage-bionetworks/sage-angular/src/styles';
 
 // Include material core styles.
 @include mat-core();

@@ -3,8 +3,9 @@
   "dest": "../../dist/sage-angular",
   "assets": [
     "src/assets",
-    "src/**/*-theme.scss",
-    "src/styles"
+    "src/styles.scss",
+    "src/styles",
+    "src/**/*-theme.scss"
   ],
   "lib": {
     "entryFile": "src/public-api.ts"
