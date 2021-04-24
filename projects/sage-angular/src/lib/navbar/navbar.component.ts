@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
   @Output()
   login = new EventEmitter<Event>();
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {}
 }
