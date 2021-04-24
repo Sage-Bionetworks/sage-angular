@@ -11,21 +11,15 @@
   }
 }
 
-// .flex-spacer {
-//   flex-grow: 1;
-// }
+.flex-spacer {
+  flex-grow: 1;
+}
 
 .sage-angular-logo {
   height: 26px;
   margin: 0 4px 3px 0;
   vertical-align: middle;
 }
-
-// .sage-github-logo {
-//   height: 21px;
-//   margin: 0 7px 2px 0;
-//   vertical-align: middle;
-// }
 
 // .sage-navbar-link {
 //   text-decoration: inherit;
@@ -70,10 +64,10 @@
 //   }
 // }
 
-theme-picker {
-  display: none;
+// theme-picker {
+//   display: none;
 
-  @media (min-width: 328px) {
-    display: block;
-  }
-}
+//   @media (min-width: 328px) {
+//     display: block;
+//   }
+// }

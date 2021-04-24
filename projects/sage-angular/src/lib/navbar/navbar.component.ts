@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'sage-navbar',
@@ -6,6 +6,10 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  @Input()
+  title = "Sage Angular";
+  @Input()
+  githubUrl = "https://github.com/Sage-Bionetworks/sage-angular";
   @Output()
   login = new EventEmitter<Event>();
 
