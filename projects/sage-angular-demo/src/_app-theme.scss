@@ -15,10 +15,9 @@
 // @import './styles/markdown-theme';
 // @import './styles/svg-theme';
 // @import './styles/tables-theme';
-@import './lib/navbar/navbar-theme';
 
 // Styles for the docs app that are based on the current theme.
-@mixin sage-angular-theme($theme) {
+@mixin sage-angular-demo-theme($theme) {
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
   $warn: map-get($theme, warn);
@@ -62,7 +61,6 @@
   // @include not-found-theme($theme);
   // @include nav-bar-theme($theme);
   // @include table-of-contents-theme($theme);
-  @include navbar-theme($theme);
 }
 
 // Define the light theme.

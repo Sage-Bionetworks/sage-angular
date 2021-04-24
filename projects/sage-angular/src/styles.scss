@@ -1,0 +1,7 @@
+@import './lib-theme';
+
+// Include material core styles.
+@include mat-core();
+
+@include angular-material-theme($theme);
+@include sage-angular-theme($theme);
