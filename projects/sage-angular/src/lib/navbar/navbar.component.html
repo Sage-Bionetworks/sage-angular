@@ -8,11 +8,21 @@
   </a>
   <div class="flex-spacer"></div>
   <sage-github-button
-    [href]="githubUrl"></sage-github-button>
+    [href]="githubUrl"
+  ></sage-github-button>
   <a mat-button class="sage-button"
+    *ngIf="!user"
     routerLink="/signin"
-    aria-label="Sign In">Sign In</a>
+    aria-label="Sign In"
+  >Sign In</a>
   <a mat-button class="sage-button"
+    *ngIf="!user"
     routerLink="/signup"
-    aria-label="Sign Up">Sign Up</a>
+    aria-label="Sign Up"
+  >Sign Up</a>
+  <a mat-button class="sage-button"
+    *ngIf="user"
+    routerLink="/signout"
+    aria-label="Sign Out"
+  >Sign Out</a>
 </nav>

@@ -1,20 +1,27 @@
 import { moduleMetadata, Meta, Story } from '@storybook/angular';
-import { FooterComponent, FooterModule } from '@sage-bionetworks/sage-angular/src/lib/footer';
+import { NavbarComponent, NavbarModule } from '@sage-bionetworks/sage-angular/src/lib/navbar';
 
 export default {
-  title: 'Library/Footer',
-  component: FooterComponent,
+  title: 'Sage Angular/Navbar',
+  component: NavbarComponent,
   decorators: [
     moduleMetadata({
       declarations: [],
-      imports: [FooterModule],
+      imports: [NavbarModule],
     }),
   ],
 } as Meta;
 
-const Template: Story<FooterComponent> = (args: FooterComponent) => ({
+const Template: Story<NavbarComponent> = (args: NavbarComponent) => ({
   props: args,
 });
 
-export const Default = Template.bind({});
-Default.args = {};
+export const SignedIn = Template.bind({});
+SignedIn.args = {
+  user: {}
+};
+
+export const SignedOut = Template.bind({});
+SignedOut.args = {
+  user: null
+};
