@@ -1,14 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files. */
+@import './styles/general';
+@import '@sage-bionetworks/sage-angular/src/styles';
+
 @import './app-theme';
 @import '@sage-bionetworks/sage-angular/src/lib-theme';
-// @import '@sage-bionetworks/sage-angular/src/styles';
 
 // Include material core styles.
 @include mat-core();
 
+.light-theme {
+  $primary: mat-palette($mat-indigo);
+  $accent:  mat-palette($mat-pink, A200, A100, A400);
+
+  $theme: mat-light-theme($primary, $accent);
+
+  @include angular-material-theme($theme);
+  @include sage-angular-demo-theme($theme);
+  @include sage-angular-theme($theme);
+}
+
+.dark-theme {
+  $primary: mat-palette($mat-purple);
+  $accent:  mat-palette($mat-green, A200, A100, A400);
+
+  $theme: mat-dark-theme($primary, $accent);
+
+  @include angular-material-theme($theme);
+  @include sage-angular-demo-theme($theme);
+  @include sage-angular-theme($theme);
+}
+
+// Default theme.
 @include angular-material-theme($theme);
 @include sage-angular-demo-theme($theme);
 @include sage-angular-theme($theme);
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

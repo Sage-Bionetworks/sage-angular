@@ -2,6 +2,8 @@
 import { setCompodocJson } from "@storybook/addon-docs/angular";
 import docJson from "../documentation.json";
 
+import '!style-loader!css-loader!sass-loader!../projects/sage-angular-demo/src/styles.scss';
+
 setCompodocJson(docJson);
 
 export const parameters = {
@@ -13,17 +15,17 @@ export const parameters = {
     },
   },
   themes: {
-    default: 'light',
+    default: 'dark',
     list: [
       {
         name: 'light',
         class: ['light-theme', 'mat-typography'],
-        color: '#00aced'
+        color: '#3f51b5'
       },
       {
         name: 'dark',
         class: ['dark-theme', 'mat-typography'],
-        color: '#3b5998'
+        color: '#9c27b0'
       }
     ],
   },
