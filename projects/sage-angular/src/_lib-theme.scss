@@ -39,10 +39,10 @@
   //   }
   // }
 
-  // .docs-footer {
-  //   background: mat-color($primary);
-  //   color: mat-color($primary, default-contrast);
-  // }
+  .sage-footer {
+    background: mat-color($primary);
+    color: mat-color($primary, default-contrast);
+  }
 
   // .is-next-version {
   //   background: mat-color($next-theme, 900) !important;
