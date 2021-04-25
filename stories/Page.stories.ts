@@ -1,19 +1,23 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
-import { CommonModule } from '@angular/common';
 
-import Button from './button.component';
-import Header from './header.component';
-import Page from './page.component';
+import { FooterModule } from '@sage-bionetworks/sage-angular/src/lib/footer';
+import { NavbarModule } from '@sage-bionetworks/sage-angular/src/lib/navbar';
 
-import * as HeaderStories from './Header.stories';
+import Page from './components/page/page.component';
+
+import * as NavbarStories from './Navbar.stories';
+import * as FooterStories from './Footer.stories';
 
 export default {
-  title: 'Example/Page',
+  title: 'Sage Angular/Page',
   component: Page,
   decorators: [
     moduleMetadata({
-      declarations: [Button, Header],
-      imports: [CommonModule],
+      declarations: [],
+      imports: [
+        FooterModule,
+        NavbarModule
+      ],
     }),
   ],
 } as Meta;
@@ -22,12 +26,14 @@ const Template: Story<Page> = (args: Page) => ({
   props: args,
 });
 
-export const LoggedIn = Template.bind({});
-LoggedIn.args = {
-  ...HeaderStories.LoggedIn.args,
+export const SignedIn = Template.bind({});
+SignedIn.args = {
+  ...FooterStories.Default.args,
+  ...NavbarStories.SignedIn.args
 };
 
-export const LoggedOut = Template.bind({});
-LoggedOut.args = {
-  ...HeaderStories.LoggedOut.args,
+export const SignedOut = Template.bind({});
+SignedOut.args = {
+  ...FooterStories.Default.args,
+  ...NavbarStories.SignedOut.args
 };

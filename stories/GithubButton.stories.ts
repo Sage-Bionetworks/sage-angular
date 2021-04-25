@@ -2,7 +2,7 @@ import { moduleMetadata, Meta, Story } from '@storybook/angular';
 import { GithubButtonComponent, GithubButtonModule } from '@sage-bionetworks/sage-angular/src/lib/github-button';
 
 export default {
-  title: 'Library/GithubButton',
+  title: 'Sage Angular/GithubButton',
   component: GithubButtonComponent,
   argTypes: {
     color: {
