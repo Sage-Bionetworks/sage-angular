@@ -1,6 +1,7 @@
 /*
  * Public API Surface of sage-angular
  */
+export * from '@sage-bionetworks/sage-angular/src/lib/footer';
 export * from '@sage-bionetworks/sage-angular/src/lib/github-button';
 export * from '@sage-bionetworks/sage-angular/src/lib/navbar';
 

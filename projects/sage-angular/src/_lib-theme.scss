@@ -15,6 +15,7 @@
 // @import './styles/markdown-theme';
 // @import './styles/svg-theme';
 // @import './styles/tables-theme';
+@import './lib/footer/footer-theme';
 @import './lib/navbar/navbar-theme';
 
 // Styles for the docs app that are based on the current theme.
@@ -38,10 +39,10 @@
   //   }
   // }
 
-  // .docs-footer {
-  //   background: mat-color($primary);
-  //   color: mat-color($primary, default-contrast);
-  // }
+  .sage-footer {
+    background: mat-color($primary);
+    color: mat-color($primary, default-contrast);
+  }
 
   // .is-next-version {
   //   background: mat-color($next-theme, 900) !important;
@@ -62,5 +63,6 @@
   // @include not-found-theme($theme);
   // @include nav-bar-theme($theme);
   // @include table-of-contents-theme($theme);
+  @include footer-theme($theme);
   @include navbar-theme($theme);
 }
