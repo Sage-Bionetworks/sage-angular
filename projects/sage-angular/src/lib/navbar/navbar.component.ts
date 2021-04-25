@@ -10,6 +10,8 @@ export class NavbarComponent implements OnInit {
   title = 'Sage Angular';
   @Input()
   githubUrl = 'https://github.com/Sage-Bionetworks/sage-angular';
+  @Input()
+  user: unknown = null;
   @Output()
   login = new EventEmitter<Event>();
 

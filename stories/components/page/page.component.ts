@@ -2,13 +2,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'sage-page',
-  template: `<article>
-    <sage-navbar></sage-navbar>
-    <section>
-      <h2>Page with Sage Angular</h2>
-    </section>
-    <sage-footer [version]="version"></sage-footer>
-  </article>`,
+  templateUrl: './page.html',
   styleUrls: ['./page.scss'],
 })
 export default class PageComponent {

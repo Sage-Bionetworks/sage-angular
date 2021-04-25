@@ -17,7 +17,11 @@ const Template: Story<NavbarComponent> = (args: NavbarComponent) => ({
 });
 
 export const SignedIn = Template.bind({});
-SignedIn.args = {};
+SignedIn.args = {
+  user: {}
+};
 
 export const SignedOut = Template.bind({});
-SignedOut.args = {};
+SignedOut.args = {
+  user: null
+};
