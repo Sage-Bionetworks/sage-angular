@@ -15,7 +15,7 @@ export const parameters = {
     },
   },
   themes: {
-    default: 'dark',
+    default: 'light',
     list: [
       {
         name: 'light',
