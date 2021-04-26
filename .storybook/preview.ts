@@ -28,5 +28,5 @@ export const parameters = {
         color: '#9c27b0'
       }
     ],
-  },
+  }
 }

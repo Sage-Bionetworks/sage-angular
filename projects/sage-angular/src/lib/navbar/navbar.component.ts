@@ -1,5 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
+import { Section } from './section';
+
 @Component({
   selector: 'sage-navbar',
   templateUrl: './navbar.component.html',
@@ -15,7 +17,20 @@ export class NavbarComponent implements OnInit {
   @Output()
   login = new EventEmitter<Event>();
 
+  private _sections: { [key: string]: Section } = {};
+  sectionsKeys: string[] = [];
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  @Input()
+  public set sections(s: { [key: string]: Section }) {
+    this._sections = s;
+    this.sectionsKeys = Object.keys(s);
+  }
+
+  public get sections(): { [key: string]: Section } {
+    return this._sections;
+  }
 }
