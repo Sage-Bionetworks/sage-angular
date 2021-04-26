@@ -17,24 +17,20 @@ export class NavbarComponent implements OnInit {
   @Output()
   login = new EventEmitter<Event>();
 
-  sections: { [key: string]: Section } = {
-    'explore': {
-      'name': 'Explore',
-      'summary': 'Explore things.'
-    },
-    'organizations': {
-      'name': 'Organizations',
-      'summary': 'The organizations you belong to.'
-    }
-  }
-  sectionsKeys: string[] = Object.keys(this.sections);
+  private _sections: { [key: string]: Section } = {};
+  sectionsKeys: string[] = [];
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  setSections(sections: { [key: string]: Section } ) {
-    this.sections = sections;
-    this.sectionsKeys = Object.keys(sections);
+  @Input()
+  public set sections(s: { [key: string]: Section }) {
+    this._sections = s;
+    this.sectionsKeys = Object.keys(s);
+  }
+
+  public get sections(): { [key: string]: Section } {
+    return this._sections;
   }
 }

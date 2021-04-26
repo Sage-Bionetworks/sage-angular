@@ -11,7 +11,7 @@
     "e2e": "ng e2e",
     "analyze": "ng build --prod --project sage-angular-demo --stats-json && webpack-bundle-analyzer ./dist/sage-angular-demo/stats.json",
     "madge": "madge projects/sage-angular/src/public-api.ts --ts-config tsconfig.json --image graph.png",
-    "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
+    "docs:json": "compodoc -p ./tsconfig.json -e json -d . --disablePrivate --disableLifeCycleHooks",
     "start:storybook": "npm run docs:json && start-storybook -p 6006 --ci --static-dir projects/sage-angular/src/assets",
     "build:storybook": "npm run docs:json && build-storybook --static-dir projects/sage-angular/src/assets"
   },

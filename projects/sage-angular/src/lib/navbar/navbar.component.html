@@ -6,10 +6,10 @@
       alt="Sage Angular">
     <span>{{title}}</span>
   </a>
-  <a mat-button class="docs-navbar-hide-small docs-button"
+  <a mat-button class="sage-navbar-hide-small sage-button"
     *ngFor="let key of sectionsKeys"
-    [routerLink]="key">{{sections[key].name}}
-  </a>
+    [routerLink]="key"
+  >{{sections[key].name}}</a>
   <div class="flex-spacer"></div>
   <sage-github-button
     [href]="githubUrl"
@@ -21,12 +21,12 @@
   >Sign In</a>
   <a mat-button class="sage-button"
     *ngIf="!user"
-    routerLink="/signup"
+    routerLink="signup"
     aria-label="Sign Up"
   >Sign Up</a>
   <a mat-button class="sage-button"
     *ngIf="user"
-    routerLink="/signout"
+    routerLink="signout"
     aria-label="Sign Out"
   >Sign Out</a>
 </nav>
