@@ -1,8 +1,10 @@
 import { moduleMetadata, Meta, Story } from '@storybook/angular';
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { APP_BASE_HREF } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent, NavbarModule, Section } from '@sage-bionetworks/sage-angular/src/lib/navbar';
+
+@Component({ template: 'Homepage' })
+class HomepageComponent {}
 
 @Component({ template: 'Lorem' })
 class LoremComponent {}
@@ -11,18 +13,19 @@ class LoremComponent {}
 class IpsumComponent {}
 
 const routes: Routes = [
+  { path: '', pathMatch: 'full', component: HomepageComponent },
   { path: 'lorem', component: LoremComponent },
   { path: 'ipsum', component: IpsumComponent }
 ];
 
 const sections: { [key: string]: Section } = {
-  'lorem': {
-    'name': 'Lorem',
-    'summary': 'Short summary of lorem.'
+  lorem: {
+    name: 'Lorem',
+    summary: 'Short summary of lorem.'
   },
-  'ipsum': {
-    'name': 'Ipsum',
-    'summary': 'Short summary of ipsum.'
+  ipsum: {
+    name: 'Ipsum',
+    summary: 'Short summary of ipsum.'
   }
 };
 
@@ -32,15 +35,14 @@ export default {
   decorators: [
     moduleMetadata({
       declarations: [
+        HomepageComponent,
         LoremComponent,
         IpsumComponent
       ],
       imports: [
         RouterModule.forRoot(routes, { useHash: true }),
         NavbarModule
-      ],
-      // providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
-      // schemas: [CUSTOM_ELEMENTS_SCHEMA]
+      ]
     }),
   ],
 } as Meta;

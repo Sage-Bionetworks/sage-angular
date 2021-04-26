@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Section } from '@sage-bionetworks/sage-angular/src/lib/navbar'
+import { Section } from '@sage-bionetworks/sage-angular/src/lib/navbar';
 
 @Component({
   selector: 'app-root',
@@ -10,13 +10,13 @@ import { Section } from '@sage-bionetworks/sage-angular/src/lib/navbar'
 export class AppComponent {
   title = 'Sage Angular Demo';
   sections: { [key: string]: Section } = {
-    'explore': {
-      'name': 'Explore',
-      'summary': 'Explore things.'
+    explore: {
+      name: 'Explore',
+      summary: 'Explore things.'
     },
-    'organizations': {
-      'name': 'Organizations',
-      'summary': 'The organizations you belong to.'
+    organizations: {
+      name: 'Organizations',
+      summary: 'The organizations you belong to.'
     }
   };
 
