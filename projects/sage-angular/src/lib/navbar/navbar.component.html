@@ -1,6 +1,6 @@
 <!-- TODO: figure out if the <nav> should go inside of a <header> element. -->
 <nav class="sage-navbar-header" aria-label="Top Toolbar">
-  <a mat-button class="sage-button" routerLink="/" aria-label="Sage Angular">
+  <a mat-button class="sage-button" routerLink="" aria-label="Sage Angular">
     <img class="sage-angular-logo"
       src="images/angular-white-transparent.svg"
       alt="Sage Angular">
@@ -16,7 +16,7 @@
   ></sage-github-button>
   <a mat-button class="sage-button"
     *ngIf="!user"
-    routerLink="/signin"
+    routerLink="signin"
     aria-label="Sign In"
   >Sign In</a>
   <a mat-button class="sage-button"
