@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 import { Section } from '@sage-bionetworks/sage-angular/src/lib/navbar';
 
 @Component({
-  selector: 'app-root',
+  selector: 'demo-app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
   title = 'Sage Angular Demo';
@@ -13,10 +14,6 @@ export class AppComponent {
     explore: {
       name: 'Explore',
       summary: 'Explore things.'
-    },
-    organizations: {
-      name: 'Organizations',
-      summary: 'The organizations you belong to.'
     }
   };
 
