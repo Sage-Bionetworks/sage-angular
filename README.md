@@ -18,11 +18,12 @@ of the library `@sage-bionetworks/sage-angular`. The two projects included are:
 - `sage-angular`: the library `@sage-bionetworks/sage-angular`.
 - `sage-angular-demo`: a demo app used to showcase the content of the library.
 
-### Specification
+## Previews
 
-- Angular version: 11.2.4
-- Typescript: 4.1.5
-- RxJS: 6.6.6
+Version | Demo app | Storybook
+------- | -------- | ---------
+1.0.0   | [Demo app](https://sage-bionetworks.github.io/sage-angular/1.0.0/demo/) | [Storybook](https://sage-bionetworks.github.io/sage-angular/1.0.0/storybook/)
+Edge   | [Demo app](https://sage-bionetworks.github.io/sage-angular/edge/demo/) | [Storybook](https://sage-bionetworks.github.io/sage-angular/edge/storybook/)
 
 ## Installation
 
