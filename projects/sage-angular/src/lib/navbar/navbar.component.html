@@ -11,9 +11,14 @@
     [routerLink]="key"
   >{{sections[key].name}}</a>
   <div class="flex-spacer"></div>
-  <sage-github-button
+  <a mat-button class="sage-button"
+    *ngIf="githubUrl"
     [href]="githubUrl"
-  ></sage-github-button>
+    aria-label="GitHub Repository">
+    <img class="sage-github-logo"
+      src="images/github-circle-white-transparent.svg"
+      alt="github-logo"
+  >GitHub</a>
   <a mat-button class="sage-button"
     *ngIf="!user"
     routerLink="signin"

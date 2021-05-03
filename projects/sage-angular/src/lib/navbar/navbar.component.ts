@@ -15,7 +15,11 @@ export class NavbarComponent implements OnInit {
   @Input()
   user: unknown = null;
   @Output()
-  login = new EventEmitter<Event>();
+  signIn = new EventEmitter<Event>();
+  @Output()
+  signUp = new EventEmitter<Event>();
+  @Output()
+  signOut = new EventEmitter<Event>();
 
   private _sections: { [key: string]: Section } = {};
   sectionsKeys: string[] = [];
