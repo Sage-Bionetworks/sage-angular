@@ -52,7 +52,7 @@
       },
       "root": "projects/sage-angular-demo",
       "sourceRoot": "projects/sage-angular-demo/src",
-      "prefix": "app",
+      "prefix": "demo",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
