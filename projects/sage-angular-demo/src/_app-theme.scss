@@ -1,10 +1,9 @@
 @import '~@angular/material/theming';
 
-// @import './app/pages/explore/explore-theme';
+@import './app/pages/explore/explore-theme';
 @import './app/pages/homepage/homepage-theme';
-// @import './app/pages/organizations/organizations-theme';
-// @import './app/pages/signin/signin-theme';
-// @import './app/pages/signup/signup-theme';
+@import './app/pages/signin/signin-theme';
+@import './app/pages/signup/signup-theme';
 
 // Styles for the docs app that are based on the current theme.
 @mixin demo-app-theme($theme) {
@@ -41,11 +40,10 @@
   //   background: mat-color($next-theme, 900) !important;
   // }
 
-  // @include explore-theme($theme);
+  @include explore-theme($theme);
   @include homepage-theme($theme);
-  // @include organizations-theme($theme);
-  // @include signin-theme($theme);
-  // @include signup-theme($theme);
+  @include signin-theme($theme);
+  @include signup-theme($theme);
 }
 
 // Define the light theme.
