@@ -15,6 +15,11 @@
   $foreground: map-get($theme, foreground);
   $next-theme: mat-palette($mat-red);
 
+  demo-app {
+    background: mat-color($background, background);
+    color: mat-color($foreground, secondary-text);
+  }
+
   // .docs-app-background {
   //   background: mat-color($background, background);
   // }
