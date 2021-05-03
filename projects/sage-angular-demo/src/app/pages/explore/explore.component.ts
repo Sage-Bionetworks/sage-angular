@@ -1,11 +1,11 @@
 import { Component, HostBinding, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'demo-homepage',
-  templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.scss']
+  selector: 'demo-explore',
+  templateUrl: './explore.component.html',
+  styleUrls: ['./explore.component.scss']
 })
-export class HomepageComponent implements OnInit {
+export class ExploreComponent implements OnInit {
   @HostBinding('class.main-content') readonly mainContentClass = true;
 
   constructor() {}

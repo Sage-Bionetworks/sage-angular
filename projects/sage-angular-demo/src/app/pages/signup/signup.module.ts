@@ -4,19 +4,19 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { FooterModule } from '@sage-bionetworks/sage-angular/src/lib/footer';
 
-import { HomepageComponent } from './homepage.component';
+import { SignupComponent } from './signup.component';
 
 const routes: Routes = [
-  { path: '', component: HomepageComponent }
+  { path: '', component: SignupComponent }
 ];
 
 @NgModule({
-  declarations: [HomepageComponent],
+  declarations: [SignupComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
     FooterModule
   ],
-  exports: [HomepageComponent]
+  exports: [SignupComponent]
 })
-export class HomepageModule {}
+export class SignupModule {}

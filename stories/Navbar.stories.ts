@@ -49,6 +49,8 @@ export default {
 
 const Template: Story<NavbarComponent> = (args: NavbarComponent) => ({
   props: {
+    title: args.title,
+    githubUrl: args.githubUrl,
     user: args.user,
     sections: args.sections
   }

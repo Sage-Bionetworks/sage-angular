@@ -1,6 +1,6 @@
 # Sage Bionetworks library for Angular
 
-<!-- [![GitHub Release](https://img.shields.io/github/release/Sage-Bionetworks/sage-angular.svg?include_prereleases&color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/Sage-Bionetworks/sage-angular/releases) -->
+[![GitHub Release](https://img.shields.io/github/release/Sage-Bionetworks/sage-angular.svg?include_prereleases&color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/Sage-Bionetworks/sage-angular/releases)
 [![GitHub CI](https://img.shields.io/github/workflow/status/Sage-Bionetworks/sage-angular/CI.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/Sage-Bionetworks/sage-angular/actions)
 [![GitHub License](https://img.shields.io/github/license/Sage-Bionetworks/sage-angular.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/Sage-Bionetworks/sage-angular/blob/main/LICENSE)
 
@@ -18,16 +18,42 @@ of the library `@sage-bionetworks/sage-angular`. The two projects included are:
 - `sage-angular`: the library `@sage-bionetworks/sage-angular`.
 - `sage-angular-demo`: a demo app used to showcase the content of the library.
 
-### Specification
+## Previews
 
-- Angular version: 11.2.4
-- Typescript: 4.1.5
-- RxJS: 6.6.6
+Version | Demo app | Storybook
+------- | -------- | ---------
+1.0.0   | [Demo app](https://sage-bionetworks.github.io/sage-angular/1.0.0/demo/) | [Storybook](https://sage-bionetworks.github.io/sage-angular/1.0.0/storybook/)
+Edge   | [Demo app](https://sage-bionetworks.github.io/sage-angular/edge/demo/) | [Storybook](https://sage-bionetworks.github.io/sage-angular/edge/storybook/)
 
 ## Installation
 
-```
+```console
 npm install @sage-bionetworks/sage-angular --save
+```
+
+Import the styles and themes of the library in your main *styles.scss*:
+
+```
+@import '@sage-bionetworks/sage-angular/src/styles';
+@import '@sage-bionetworks/sage-angular/src/lib-theme';
+
+// Include material core styles.
+@include mat-core();
+
+@include angular-material-theme($theme);
+@include sage-angular-theme($theme);
+```
+
+Import the image assets of the library in your *angular.json*:
+
+```json
+"assets": [
+  {
+    "glob": "**/*.@(svg)",
+    "input": "sage-angular/dist/sage-angular/src/assets/images",
+    "output": "images"
+  }
+],
 ```
 
 ## Development server
