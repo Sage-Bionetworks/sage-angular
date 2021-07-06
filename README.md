@@ -6,7 +6,7 @@
 
 Library of reusable Angular artifacts used in Sage Bionetworks projects
 
-## Overview
+## Introduction
 
 This repository provides a library of reusable code that defines components,
 services, and other Angular artifacts (pipes, directives, and so on) that are
