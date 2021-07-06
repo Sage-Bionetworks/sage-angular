@@ -84,7 +84,7 @@ jobs:
         npm ci
         npm install -g @angular/cli
     - name: Build sage-angular-demo
-      run: ng build sage-angular-demo --prod --baseHref="${{ env.gh_pages_url }}/${{ steps.prep.outputs.version }}/demo/"
+      run: ng build sage-angular-demo --configuration production --baseHref="${{ env.gh_pages_url }}/${{ steps.prep.outputs.version }}/demo/"
     - name: Build storybook
       run: npm run build:storybook
     - name: Commit to gh-pages
