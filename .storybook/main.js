@@ -8,10 +8,13 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-knobs",
+    "@storybook/addon-controls",
     "@storybook/addon-actions",
     "storybook-addon-themes"
   ],
+  core: {
+    builder: 'webpack5',
+  },
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
     // You can change the configuration based on that.
@@ -26,5 +29,5 @@ module.exports = {
 
     // Return the altered config
     return config;
-  },
+  }
 }
