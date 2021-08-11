@@ -56,7 +56,7 @@
     "karma-jasmine": "~4.0.1",
     "karma-jasmine-html-reporter": "^1.6.0",
     "madge": "^5.0.1",
-    "ng-packagr": "^12.1.0",
+    "ng-packagr": "^12.2.0",
     "ng-samurai": "^2.0.6",
     "protractor": "~7.0.0",
     "storybook-addon-themes": "^6.1.0",
