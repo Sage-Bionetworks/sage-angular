@@ -99,7 +99,7 @@ jobs:
     # - name: Run e2e tests
     #   run: npm run e2e
 
-  buld-and-publish-package:
+  build-and-publish-package:
     needs: [test]
     runs-on: ubuntu-latest
     steps:
