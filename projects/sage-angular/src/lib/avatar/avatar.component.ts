@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class AvatarComponent {
   @Input() name = '';
-  @Input() avatarUrl = '';
+  @Input() src = '';
   @Input() size = 40;
 
   constructor() {}
