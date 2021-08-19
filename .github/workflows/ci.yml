@@ -161,7 +161,7 @@ jobs:
     - name: Install dependencies
       run: |
         npm ci
-        npm install -g @angular/cli
+        npm install -g @angular/cli@12.1.4
 
     - name: Build sage-angular-demo
       run: ng build sage-angular-demo --configuration production --baseHref="${{ env.gh_pages_url }}/${{ env.version }}/demo/"
