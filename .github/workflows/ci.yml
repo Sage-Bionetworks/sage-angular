@@ -75,19 +75,22 @@ jobs:
         echo ::set-output name=version_minor::${MINOR}
         echo ::set-output name=created::$(date -u +'%Y-%m-%dT%H:%M:%SZ')
         echo ::set-output name=push::${PUSH}
+
     - name: Use Node.js ${{ env.node_version }}
       uses: actions/setup-node@v2.4.0
       with:
         node-version: ${{ env.node_version }}
+
     - name: Install dependencies
       run: |
         npm ci
         npm install -g @angular/cli
+
     - name: Build sage-angular-demo
       run: ng build sage-angular-demo --configuration production --baseHref="${{ env.gh_pages_url }}/${{ steps.prep.outputs.version }}/demo/"
 
-    # - name: Build storybook
-    #   run: npm run build:storybook
+    - name: Build storybook
+      run: npm run build:storybook
 
     - name: Commit to gh-pages
       run: |
