@@ -1,6 +1,5 @@
 {
-  "name": "@sage-bionetworks/sage-angular",
-  "version": "1.2.0",
+  "name": "sage-angular",
   "private": true,
   "scripts": {
     "ng": "ng",
