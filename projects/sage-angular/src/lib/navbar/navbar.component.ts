@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 import { Section } from './section';
 
@@ -7,7 +7,7 @@ import { Section } from './section';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
   @Input()
   title = 'Sage Angular';
   @Input()
@@ -25,8 +25,6 @@ export class NavbarComponent implements OnInit {
   sectionsKeys: string[] = [];
 
   constructor() {}
-
-  ngOnInit(): void {}
 
   @Input()
   public set sections(s: { [key: string]: Section }) {

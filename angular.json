@@ -30,14 +30,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "projects/sage-angular/tsconfig.lib.json",
-              "projects/sage-angular/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "projects/sage-angular/**/*.ts",
+              "projects/sage-angular/**/*.html"
             ]
           }
         }
@@ -150,15 +147,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "projects/sage-angular-demo/tsconfig.app.json",
-              "projects/sage-angular-demo/tsconfig.spec.json",
-              "projects/sage-angular-demo/e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "projects/sage-angular-demo/**/*.ts",
+              "projects/sage-angular-demo/**/*.html"
             ]
           }
         },
@@ -178,7 +171,8 @@
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": false,
+    "defaultCollection": "@angular-eslint/schematics"
   },
   "defaultProject": "sage-angular"
 }
