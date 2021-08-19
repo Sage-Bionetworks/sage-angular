@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer.component';
 
 @NgModule({
-  declarations: [FooterComponent],
   imports: [CommonModule],
+  declarations: [FooterComponent],
   exports: [FooterComponent]
 })
 export class FooterModule {}

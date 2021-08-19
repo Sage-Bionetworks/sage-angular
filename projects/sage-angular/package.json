@@ -5,7 +5,8 @@
     "@angular/common": "^12.1.1",
     "@angular/core": "^12.1.1",
     "@angular/material": "^12.1.1",
-    "ngx-avatar": "^4.1.0"
+    "ngx-avatar": "^4.1.0",
+    "rxjs": "^6.6.7"
   },
   "dependencies": {
     "tslib": "^2.3.0"
