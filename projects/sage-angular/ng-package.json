@@ -8,9 +8,6 @@
     "src/**/*-theme.scss"
   ],
   "lib": {
-    "entryFile": "src/public-api.ts",
-    "umdModuleIds": {
-      "ngx-avatar": "ngx-avatar"
-    }
+    "entryFile": "src/public-api.ts"
   }
 }
