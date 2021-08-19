@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --configuration production",
+    "build:dev": "ng build",
     "build:demo": "ng build sage-angular-demo",
     "test": "ng test --watch=false",
     "lint": "ng lint",
