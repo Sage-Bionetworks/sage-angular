@@ -1,22 +1,24 @@
-<!-- <button mat-button class="user-button" [matMenuTriggerFor]="userMenu">
+<button mat-button class="user-button" [matMenuTriggerFor]="userMenu">
   <div>
-      <user-avatar [user]="currentUser" [size]="avatarSize"></user-avatar>
-      <mat-icon class="app-hide-small" aria-hidden="true">keyboard_arrow_down</mat-icon>
+    <sage-avatar name="Awesome Avatar" [size]=32></sage-avatar>
+    <mat-icon class="app-hide-small" aria-hidden="true">keyboard_arrow_down
+    </mat-icon>
   </div>
 </button>
 <mat-menu #userMenu="matMenu" xPosition="before" [overlapTrigger]="false">
   <div class="user-account-preview">
-      Signed in as
-      <span class="username">{{currentUser.username}}</span>
+    Signed in as
+    <!-- <span class="username">{{currentUser.username}}</span> -->
+    <span>avatar</span>
   </div>
   <mat-divider></mat-divider>
   <button mat-menu-item routerLink="/profile" aria-label="My Profile">
-      <mat-icon aria-hidden="true">account_circle</mat-icon>
-      <span>Profile</span>
+    <mat-icon aria-hidden="true">account_circle</mat-icon>
+    <span>Profile</span>
   </button>
-  <button mat-menu-item (click)="logout()" aria-label="Logout">
-      <mat-icon aria-hidden="true">exit_to_app</mat-icon>
-      <span>Logout</span>
+  <!-- (click)="logout()" -->
+  <button mat-menu-item aria-label="Logout">
+    <mat-icon aria-hidden="true">exit_to_app</mat-icon>
+    <span>Logout</span>
   </button>
-</mat-menu> -->
-<sage-avatar name="Awesome Avatar" [size]=32></sage-avatar>
+</mat-menu>
