@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Avatar, MOCK_AVATAR_32 } from '@sage-bionetworks/sage-angular/src/lib/avatar';
 import { Section } from './section';
 
 @Component({
@@ -7,12 +8,11 @@ import { Section } from './section';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  @Input()
-  title = 'Sage Angular';
-  @Input()
-  githubUrl = 'https://github.com/Sage-Bionetworks/sage-angular';
-  @Input()
-  user: unknown = null;
+  @Input() title = 'Sage Angular';
+  @Input() githubUrl = 'https://github.com/Sage-Bionetworks/sage-angular';
+  @Input() user: unknown = null;
+  @Input() avatar: Avatar = MOCK_AVATAR_32;
+
   @Output()
   signIn = new EventEmitter<Event>();
   @Output()

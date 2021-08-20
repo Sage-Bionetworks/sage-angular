@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { Avatar } from './avatar';
+import { EMPTY_AVATAR } from './mock-avatars';
 
 @Component({
   selector: 'sage-avatar',
@@ -6,9 +8,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./avatar.component.scss'],
 })
 export class AvatarComponent {
+  @Input() avatar: Avatar = EMPTY_AVATAR;
   @Input() name = '';
   @Input() src = '';
-  @Input() size = 100;
+  @Input() size = 32;
 
   constructor() {}
 }

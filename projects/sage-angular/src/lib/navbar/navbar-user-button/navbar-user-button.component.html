@@ -1,6 +1,6 @@
 <button mat-button class="user-button" [matMenuTriggerFor]="userMenu">
   <div>
-    <sage-avatar name="Awesome Avatar" [size]=32></sage-avatar>
+    <sage-avatar [avatar]="avatar"></sage-avatar>
     <mat-icon class="app-hide-small" aria-hidden="true">keyboard_arrow_down
     </mat-icon>
   </div>
@@ -8,8 +8,7 @@
 <mat-menu #userMenu="matMenu" xPosition="before" [overlapTrigger]="false">
   <div class="user-account-preview">
     Signed in as
-    <!-- <span class="username">{{currentUser.username}}</span> -->
-    <span>avatar</span>
+    <span class="username">{{avatar.name}}</span>
   </div>
   <mat-divider></mat-divider>
   <a mat-button mat-menu-item *ngFor="let item of menuItems"
