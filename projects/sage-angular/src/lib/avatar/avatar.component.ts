@@ -1,19 +1,14 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { of } from 'rxjs';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'sage-avatar',
   templateUrl: './avatar.component.html',
   styleUrls: ['./avatar.component.scss'],
 })
-export class AvatarComponent implements OnInit {
+export class AvatarComponent {
   @Input() name = '';
   @Input() src = '';
-  @Input() size = 40;
+  @Input() size = 100;
 
   constructor() {}
-
-  ngOnInit(): void {
-    of(10).subscribe((item) => console.log('ITEM', item));
-  }
 }
