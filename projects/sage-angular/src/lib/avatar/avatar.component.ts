@@ -8,10 +8,22 @@ import { EMPTY_AVATAR } from './mock-avatars';
   styleUrls: ['./avatar.component.scss'],
 })
 export class AvatarComponent {
-  @Input() avatar: Avatar = EMPTY_AVATAR;
   @Input() name = '';
   @Input() src = '';
   @Input() size = 32;
 
   constructor() {}
+
+  get avatar(): Avatar {
+    return {
+      name: this.name,
+      src: this.src,
+      size: this.size,
+    };
+  }
+  @Input() set avatar(avatar: Avatar) {
+    this.name = avatar.name;
+    this.src = avatar.src;
+    this.size = avatar.size;
+  }
 }
