@@ -1,5 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Avatar, MOCK_AVATAR_32 } from '@sage-bionetworks/sage-angular/src/lib/avatar';
+import { MenuItem } from './navbar-user-button/menu-item';
+import { MOCK_MENU_ITEMS } from './navbar-user-button/mock-menu-items';
 import { Section } from './section';
 
 @Component({
@@ -12,6 +14,7 @@ export class NavbarComponent {
   @Input() githubUrl = 'https://github.com/Sage-Bionetworks/sage-angular';
   @Input() user: unknown = null;
   @Input() avatar: Avatar = MOCK_AVATAR_32;
+  @Input() avatarMenuItems: MenuItem[] = MOCK_MENU_ITEMS;
 
   @Output()
   signIn = new EventEmitter<Event>();

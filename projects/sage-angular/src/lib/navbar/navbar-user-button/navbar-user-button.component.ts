@@ -10,9 +10,9 @@ import { MOCK_MENU_ITEMS } from './mock-menu-items';
 })
 export class NavbarUserButtonComponent implements OnInit {
   @Input()
-  menuItems: MenuItem[] = MOCK_MENU_ITEMS;
-  @Input()
   avatar: Avatar = EMPTY_AVATAR
+  @Input()
+  menuItems: MenuItem[] = [];
 
   constructor() {}
 
