@@ -14,11 +14,11 @@
     <img class="sage-github-logo"
       src="images/github-circle-white-transparent.svg"
       alt="github-logo">GitHub</a>
-  <a mat-button class="sage-button" *ngIf="!user" routerLink="signin"
+  <a mat-button class="sage-button" *ngIf="!signedIn" routerLink="signin"
     aria-label="Sign In">Sign In</a>
-  <a mat-button class="sage-button" *ngIf="!user" routerLink="signup"
+  <a mat-button class="sage-button" *ngIf="!signedIn" routerLink="signup"
     aria-label="Sign Up">Sign Up</a>
-  <sage-navbar-user-button [avatar]="avatar" [menuItems]="avatarMenuItems"
+  <sage-navbar-user-button *ngIf="signedIn" [avatar]="avatar" [menuItems]="avatarMenuItems"
     (menuItemSelected)="selectUserMenuItem($event)">
   </sage-navbar-user-button>
 </nav>

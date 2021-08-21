@@ -15,7 +15,7 @@ import { Section } from './section';
 export class NavbarComponent {
   @Input() title = 'Sage Angular';
   @Input() githubUrl = 'https://github.com/Sage-Bionetworks/sage-angular';
-  @Input() user: unknown = null;
+  @Input() signedIn = true;
   @Input() avatar: Avatar = MOCK_AVATAR_32;
   @Input() avatarMenuItems: MenuItem[] = MOCK_MENU_ITEMS;
 

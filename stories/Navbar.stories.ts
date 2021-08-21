@@ -53,16 +53,13 @@ export default {
 
 const Template: Story<NavbarComponent> = (args: NavbarComponent) => ({
   props: {
-    title: args.title,
-    githubUrl: args.githubUrl,
-    user: args.user,
-    sections: args.sections
+    ...args
   }
 });
 
 export const SignedIn = Template.bind({});
 SignedIn.args = {
-  user: {},
+  signedIn: true,
   sections: sections,
   avatar: MOCK_AVATAR_32,
   avatarMenuItems: MOCK_MENU_ITEMS
@@ -70,6 +67,8 @@ SignedIn.args = {
 
 export const SignedOut = Template.bind({});
 SignedOut.args = {
-  user: null,
-  sections: sections
+  signedIn: false,
+  sections: sections,
+  avatar: MOCK_AVATAR_32,
+  avatarMenuItems: MOCK_MENU_ITEMS
 };
