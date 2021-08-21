@@ -10,11 +10,15 @@ import { MenuItem } from './menu-item';
 export class NavbarUserButtonComponent implements OnInit {
   @Input() avatar: Avatar = EMPTY_AVATAR
   @Input() menuItems: MenuItem[] = [];
-  @Output() selectMenuItem = new EventEmitter<MenuItem>();
+  @Output() menuItemSelected = new EventEmitter<MenuItem>();
 
   constructor() {}
 
   ngOnInit() {
     console.log(this.menuItems);
+  }
+
+  selectMenuItem(menuItem: MenuItem) {
+    this.menuItemSelected.emit(menuItem);
   }
 }

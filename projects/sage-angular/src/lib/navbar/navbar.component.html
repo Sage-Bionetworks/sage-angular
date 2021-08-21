@@ -19,6 +19,6 @@
   <a mat-button class="sage-button" *ngIf="!user" routerLink="signup"
     aria-label="Sign Up">Sign Up</a>
   <sage-navbar-user-button [avatar]="avatar" [menuItems]="avatarMenuItems"
-    (selectMenuItem)="selectUserMenuItem.emit($event)">
+    (menuItemSelected)="selectUserMenuItem($event)">
   </sage-navbar-user-button>
 </nav>

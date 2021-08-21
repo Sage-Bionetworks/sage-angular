@@ -21,7 +21,7 @@ export class NavbarComponent {
 
   @Output() signIn = new EventEmitter<Event>();
   @Output() signUp = new EventEmitter<Event>();
-  @Output() selectUserMenuItem = new EventEmitter<MenuItem>();
+  @Output() userMenuItemSelected = new EventEmitter<MenuItem>();
 
   private _sections: { [key: string]: Section } = {};
   sectionsKeys: string[] = [];
@@ -36,5 +36,9 @@ export class NavbarComponent {
 
   public get sections(): { [key: string]: Section } {
     return this._sections;
+  }
+
+  selectUserMenuItem(menuItem: MenuItem) {
+    this.userMenuItemSelected.emit(menuItem);
   }
 }
