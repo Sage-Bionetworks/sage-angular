@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { Avatar } from './avatar';
+import { EMPTY_AVATAR } from './mock-avatars';
 
 @Component({
   selector: 'sage-avatar',
@@ -8,7 +10,22 @@ import { Component, Input } from '@angular/core';
 export class AvatarComponent {
   @Input() name = '';
   @Input() src = '';
-  @Input() size = 100;
+  @Input() size = 32;
 
   constructor() {}
+
+  @Input() set avatar(avatar: Avatar) {
+    if (avatar) {
+      this.name = avatar.name;
+      this.src = avatar.src;
+      this.size = avatar.size;
+    }
+  }
+  get avatar(): Avatar {
+    return {
+      name: this.name,
+      src: this.src,
+      size: this.size,
+    };
+  }
 }

@@ -2,6 +2,9 @@ import { moduleMetadata, Meta, Story } from '@storybook/angular';
 import { Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent, NavbarModule, Section } from '@sage-bionetworks/sage-angular/src/lib/navbar';
+import { MOCK_AVATAR_32 } from '@sage-bionetworks/sage-angular/src/public-api';
+import { MOCK_MENU_ITEMS } from '@sage-bionetworks/sage-angular/src/lib/navbar/navbar-user-button/mock-menu-items';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @Component({ template: 'Homepage' })
 class HomepageComponent {}
@@ -41,6 +44,7 @@ export default {
       ],
       imports: [
         RouterModule.forRoot(routes, { useHash: true }),
+        BrowserAnimationsModule,
         NavbarModule
       ]
     }),
@@ -49,21 +53,22 @@ export default {
 
 const Template: Story<NavbarComponent> = (args: NavbarComponent) => ({
   props: {
-    title: args.title,
-    githubUrl: args.githubUrl,
-    user: args.user,
-    sections: args.sections
+    ...args
   }
 });
 
 export const SignedIn = Template.bind({});
 SignedIn.args = {
-  user: {},
-  sections: sections
+  signedIn: true,
+  sections: sections,
+  avatar: MOCK_AVATAR_32,
+  avatarMenuItems: MOCK_MENU_ITEMS
 };
 
 export const SignedOut = Template.bind({});
 SignedOut.args = {
-  user: null,
-  sections: sections
+  signedIn: false,
+  sections: sections,
+  avatar: MOCK_AVATAR_32,
+  avatarMenuItems: MOCK_MENU_ITEMS
 };

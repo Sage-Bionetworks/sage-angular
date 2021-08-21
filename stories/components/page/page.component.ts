@@ -6,6 +6,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./page.scss'],
 })
 export default class PageComponent {
+  @Input() signedIn = false;
+
   // @Input()
   // version = '2.0.0';
 
