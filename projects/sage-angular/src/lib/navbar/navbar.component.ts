@@ -1,5 +1,8 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Avatar, MOCK_AVATAR_32 } from '@sage-bionetworks/sage-angular/src/lib/avatar';
+import {
+  Avatar,
+  MOCK_AVATAR_32,
+} from '@sage-bionetworks/sage-angular/src/lib/avatar';
 import { MenuItem } from './navbar-user-button/menu-item';
 import { MOCK_MENU_ITEMS } from './navbar-user-button/mock-menu-items';
 import { Section } from './section';
@@ -7,7 +10,7 @@ import { Section } from './section';
 @Component({
   selector: 'sage-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
   @Input() title = 'Sage Angular';
@@ -16,12 +19,9 @@ export class NavbarComponent {
   @Input() avatar: Avatar = MOCK_AVATAR_32;
   @Input() avatarMenuItems: MenuItem[] = MOCK_MENU_ITEMS;
 
-  @Output()
-  signIn = new EventEmitter<Event>();
-  @Output()
-  signUp = new EventEmitter<Event>();
-  @Output()
-  signOut = new EventEmitter<Event>();
+  @Output() signIn = new EventEmitter<Event>();
+  @Output() signUp = new EventEmitter<Event>();
+  @Output() selectUserMenuItem = new EventEmitter<MenuItem>();
 
   private _sections: { [key: string]: Section } = {};
   sectionsKeys: string[] = [];

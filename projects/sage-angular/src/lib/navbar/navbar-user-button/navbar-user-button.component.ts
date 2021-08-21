@@ -1,7 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { EMPTY_AVATAR, Avatar } from '@sage-bionetworks/sage-angular/src/lib/avatar';
 import { MenuItem } from './menu-item';
-import { MOCK_MENU_ITEMS } from './mock-menu-items';
 
 @Component({
   selector: 'sage-navbar-user-button',
@@ -9,10 +8,9 @@ import { MOCK_MENU_ITEMS } from './mock-menu-items';
   styleUrls: ['./navbar-user-button.component.scss']
 })
 export class NavbarUserButtonComponent implements OnInit {
-  @Input()
-  avatar: Avatar = EMPTY_AVATAR
-  @Input()
-  menuItems: MenuItem[] = [];
+  @Input() avatar: Avatar = EMPTY_AVATAR
+  @Input() menuItems: MenuItem[] = [];
+  @Output() selectMenuItem = new EventEmitter<MenuItem>();
 
   constructor() {}
 
