@@ -20,7 +20,7 @@ export const Letters = Template.bind({});
 Letters.args = {
   name: 'Awesome Avatar',
   size: 100,
-  // avatar: MOCK_AVATAR_32 // TODO Why doesn't this set the avatar?
+  avatar: MOCK_AVATAR_32 // TODO Why doesn't this set the avatar?
 };
 
 export const Picture = Template.bind({});
