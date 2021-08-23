@@ -1,13 +1,7 @@
-@mixin avatar-theme($theme) {
+@mixin navbar-user-button-theme($theme) {
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
   $warn: map-get($theme, warn);
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
-
-  // sage-avatar {
-  //   // .sage-footer-links a {
-  //   //   color: mat-color($primary, default-contrast);
-  //   // }
-  // }
 }

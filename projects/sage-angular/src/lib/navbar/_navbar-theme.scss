@@ -1,3 +1,5 @@
+@import './navbar-user-button/navbar-user-button-theme';
+
 @mixin navbar-theme($theme) {
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
@@ -12,4 +14,6 @@
       background: mat-color($primary);
     }
   }
+
+  @include avatar-theme($theme);
 }
