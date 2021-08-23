@@ -8,6 +8,8 @@ import Page from './components/page/page.component';
 
 import * as NavbarStories from './Navbar.stories';
 import * as FooterStories from './Footer.stories';
+import { MOCK_AVATAR_32 } from '@sage-bionetworks/sage-angular/src/public-api';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @Component({ template: 'Homepage' })
 class HomepageComponent {}
@@ -47,6 +49,7 @@ export default {
       ],
       imports: [
         RouterModule.forRoot(routes, { useHash: true }),
+        BrowserAnimationsModule,
         FooterModule,
         NavbarModule
       ],
@@ -61,7 +64,7 @@ const Template: Story<Page> = (args: Page) => ({
 export const SignedIn = Template.bind({});
 SignedIn.args = {
   ...FooterStories.Default.args,
-  ...NavbarStories.SignedIn.args
+  ...NavbarStories.SignedIn.args,
 };
 
 export const SignedOut = Template.bind({});
