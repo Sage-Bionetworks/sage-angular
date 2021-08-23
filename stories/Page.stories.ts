@@ -65,7 +65,6 @@ export const SignedIn = Template.bind({});
 SignedIn.args = {
   ...FooterStories.Default.args,
   ...NavbarStories.SignedIn.args,
-
 };
 
 export const SignedOut = Template.bind({});

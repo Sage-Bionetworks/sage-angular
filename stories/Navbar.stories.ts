@@ -59,7 +59,7 @@ export const SignedIn = Template.bind({});
 SignedIn.args = {
   signedIn: true,
   sections: sections,
-  avatar: MOCK_AVATAR_32,
+  userAvatar: MOCK_AVATAR_32,
   userMenuItems: MOCK_MENU_ITEMS
 };
 
@@ -67,6 +67,6 @@ export const SignedOut = Template.bind({});
 SignedOut.args = {
   signedIn: false,
   sections: sections,
-  avatar: MOCK_AVATAR_32,
+  userAvatar: MOCK_AVATAR_32,
   userMenuItems: MOCK_MENU_ITEMS
 };

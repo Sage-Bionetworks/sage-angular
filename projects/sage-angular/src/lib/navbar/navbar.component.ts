@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import {
   Avatar,
-  EMPTY_AVATAR
+  EMPTY_AVATAR,
 } from '@sage-bionetworks/sage-angular/src/lib/avatar';
 import { MenuItem } from './navbar-user-button/menu-item';
 import { Section } from './section';
@@ -15,7 +15,7 @@ export class NavbarComponent {
   @Input() title = 'Sage Angular';
   @Input() githubUrl = 'https://github.com/Sage-Bionetworks/sage-angular';
   @Input() signedIn = true;
-  @Input() avatar: Avatar = EMPTY_AVATAR;
+  @Input() userAvatar: Avatar = EMPTY_AVATAR;
   @Input() userMenuItems: MenuItem[] = [];
 
   @Output() signIn = new EventEmitter<Event>();

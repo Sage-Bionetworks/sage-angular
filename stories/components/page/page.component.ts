@@ -10,7 +10,7 @@ export default class PageComponent {
   @Input() title = 'App Title';
   @Input() sections = {};
   @Input() signedIn = false;
-  @Input() avatar: Avatar = EMPTY_AVATAR;
+  @Input() userAvatar: Avatar = EMPTY_AVATAR;
   @Input() userMenuItems: MenuItem[] = [];
 
   // @Input()
