@@ -1,4 +1,5 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Avatar, EMPTY_AVATAR, MenuItem } from '@sage-bionetworks/sage-angular/src/public-api';
 
 @Component({
   selector: 'sage-page',
@@ -6,7 +7,11 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./page.scss'],
 })
 export default class PageComponent {
+  @Input() title = 'App Title';
+  @Input() sections = {};
   @Input() signedIn = false;
+  @Input() avatar: Avatar = EMPTY_AVATAR;
+  @Input() userMenuItems: MenuItem[] = [];
 
   // @Input()
   // version = '2.0.0';

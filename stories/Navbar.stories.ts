@@ -52,9 +52,7 @@ export default {
 } as Meta;
 
 const Template: Story<NavbarComponent> = (args: NavbarComponent) => ({
-  props: {
-    ...args
-  }
+  props: args
 });
 
 export const SignedIn = Template.bind({});

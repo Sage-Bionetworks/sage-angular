@@ -1,6 +1,10 @@
 <article>
   <sage-navbar
+    [title]="title"
+    [sections]="sections"
     [signedIn]="signedIn"
+    [avatar]="avatar"
+    [userMenuItems]="userMenuItems"
   ></sage-navbar>
   <router-outlet></router-outlet>
   <sage-footer [version]="version"></sage-footer>
