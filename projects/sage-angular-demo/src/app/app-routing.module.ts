@@ -5,24 +5,25 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    loadChildren: () => import('./pages/homepage').then(m => m.HomepageModule)
+    loadChildren: () =>
+      import('./pages/homepage').then((m) => m.HomepageModule),
   },
   {
     path: 'explore',
-    loadChildren: () => import('./pages/explore').then(m => m.ExploreModule)
+    loadChildren: () => import('./pages/explore').then((m) => m.ExploreModule),
   },
   {
     path: 'signin',
-    loadChildren: () => import('./pages/signin').then(m => m.SigninModule)
+    loadChildren: () => import('./pages/signin').then((m) => m.SigninModule),
   },
   {
     path: 'signup',
-    loadChildren: () => import('./pages/signup').then(m => m.SignupModule)
+    loadChildren: () => import('./pages/signup').then((m) => m.SignupModule),
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -3,24 +3,18 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { AvatarModule } from '@sage-bionetworks/sage-angular/src/lib/avatar';
 import { FooterModule } from '@sage-bionetworks/sage-angular/src/lib/footer';
-// import { AvatarModule as NgxAvatarModule } from 'ngx-avatar';
-// import { AvatarModule } from '@sage-bionetworks/sage-angular';
-// import { FooterModule } from '@sage-bionetworks/sage-angular';
 import { HomepageComponent } from './homepage.component';
 
-const routes: Routes = [
-  { path: '', component: HomepageComponent }
-];
+const routes: Routes = [{ path: '', component: HomepageComponent }];
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    // NgxAvatarModule,
     AvatarModule,
-    FooterModule
+    FooterModule,
   ],
   declarations: [HomepageComponent],
-  exports: [HomepageComponent]
+  exports: [HomepageComponent],
 })
 export class HomepageModule {}
