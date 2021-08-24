@@ -1,7 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
-import { Section } from '@sage-bionetworks/sage-angular/src/lib/navbar';
-import { MenuItem } from '@sage-bionetworks/sage-angular/src/lib/navbar/navbar-user-button/menu-item';
+import { MenuItem, Section } from '@sage-bionetworks/sage-angular/src/lib/navbar';
 
 @Component({
   selector: 'demo-app',

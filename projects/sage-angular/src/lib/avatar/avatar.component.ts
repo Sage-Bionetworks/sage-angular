@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { Avatar } from './avatar';
-import { EMPTY_AVATAR } from './mock-avatars';
 
 @Component({
   selector: 'sage-avatar',
