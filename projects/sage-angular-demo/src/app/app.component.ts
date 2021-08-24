@@ -7,15 +7,15 @@ import { MenuItem } from '@sage-bionetworks/sage-angular/src/lib/navbar/navbar-u
   selector: 'demo-app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
   title = 'Sage Angular Demo';
   sections: { [key: string]: Section } = {
     explore: {
       name: 'Explore',
-      summary: 'Explore things.'
-    }
+      summary: 'Explore things.',
+    },
   };
 
   constructor() {}
