@@ -1,1 +1,10 @@
-<p>notification-button works!</p>
+<!-- (numNotifications$ | async) === 0 -->
+<a mat-icon-button matTooltip="Notifications" (click)="clickButton()">
+  <ng-container *ngIf="numNotifications === 0; else showIconWithBadge">
+    <mat-icon>notifications</mat-icon>
+  </ng-container>
+  <ng-template #showIconWithBadge>
+    <mat-icon matBadge="&#8288;" matBadgeColor="warn"
+      matBadgeSize="small">notifications</mat-icon>
+  </ng-template>
+</a>
