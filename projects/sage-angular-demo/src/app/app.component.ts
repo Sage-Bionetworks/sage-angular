@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
-import { MenuItem, Section } from '@sage-bionetworks/sage-angular/src/lib/navbar';
+import { MenuItem, MOCK_MENU_ITEMS, Section } from '@sage-bionetworks/sage-angular/src/lib/navbar';
+import { Avatar, MOCK_AVATAR_32 } from '@sage-bionetworks/sage-angular/src/public-api';
 
 @Component({
   selector: 'demo-app',
@@ -16,6 +17,8 @@ export class AppComponent {
       summary: 'Explore things.',
     },
   };
+  userAvatar:Avatar = MOCK_AVATAR_32;
+  userMenuItems: MenuItem[] = MOCK_MENU_ITEMS;
 
   constructor() {}
 
