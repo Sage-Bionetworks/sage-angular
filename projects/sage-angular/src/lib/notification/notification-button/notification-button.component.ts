@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { NotificationService } from '../notification.service';
 
 @Component({
@@ -7,13 +7,23 @@ import { NotificationService } from '../notification.service';
   templateUrl: './notification-button.component.html',
   styleUrls: ['./notification-button.component.scss'],
 })
-export class NotificationButtonComponent implements OnInit {
-  notificationsCount$!: Observable<number>;
+export class NotificationButtonComponent implements OnInit, OnDestroy {
+  notificationsCount = 0;
+  private subscriptions: Subscription[] = [];
 
   constructor(private notificationService: NotificationService) {}
 
   ngOnInit(): void {
-    this.notificationsCount$ = this.notificationService.getNotificationsCount();
+    const notificationsCountSub = this.notificationService
+      .getNotificationsCount()
+      .subscribe(
+        (notificationsCount) => (this.notificationsCount = notificationsCount)
+      );
+    this.subscriptions.push(notificationsCountSub);
+  }
+
+  ngOnDestroy() {
+    this.subscriptions.forEach(sub => sub.unsubscribe());
   }
 
   clickButton(): void {
