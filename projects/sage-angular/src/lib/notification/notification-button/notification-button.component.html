@@ -1,0 +1,9 @@
+<a mat-icon-button matTooltip="Notifications">
+  <ng-container *ngIf="notificationsCount === 0; else showIconWithBadge">
+    <mat-icon>notifications</mat-icon>
+  </ng-container>
+  <ng-template #showIconWithBadge>
+    <mat-icon matBadge="&#8288;" matBadgeColor="warn"
+      matBadgeSize="small">notifications</mat-icon>
+  </ng-template>
+</a>

@@ -6,6 +6,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { AvatarModule } from '@sage-bionetworks/sage-angular/src/lib/avatar';
+import { NotificationModule } from '@sage-bionetworks/sage-angular/src/lib/notification';
 import { NavbarComponent } from './navbar.component';
 import { NavbarUserButtonComponent } from './navbar-user-button/navbar-user-button.component';
 
@@ -18,6 +19,7 @@ import { NavbarUserButtonComponent } from './navbar-user-button/navbar-user-butt
     MatIconModule,
     MatMenuModule,
     AvatarModule,
+    NotificationModule
   ],
   declarations: [NavbarComponent, NavbarUserButtonComponent],
   exports: [NavbarComponent, NavbarUserButtonComponent],
