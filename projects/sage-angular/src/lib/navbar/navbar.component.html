@@ -10,7 +10,7 @@
     [routerLink]="key">{{sections[key].name}}</a>
   <div class="flex-spacer"></div>
 
-  <sage-notification-button></sage-notification-button>
+  <sage-notification-button (click)="clickNotificationButton()"></sage-notification-button>
 
   <a mat-button class="sage-button" *ngIf="githubUrl" [href]="githubUrl"
     aria-label="GitHub Repository">

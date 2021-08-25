@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { NotificationService } from '../notification.service';
 
@@ -24,9 +24,5 @@ export class NotificationButtonComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.subscriptions.forEach(sub => sub.unsubscribe());
-  }
-
-  clickButton(): void {
-    console.log('Notification button clicked');
   }
 }

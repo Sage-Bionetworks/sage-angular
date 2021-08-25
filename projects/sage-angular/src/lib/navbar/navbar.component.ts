@@ -18,9 +18,10 @@ export class NavbarComponent {
   @Input() userAvatar: Avatar = EMPTY_AVATAR;
   @Input() userMenuItems: MenuItem[] = [];
 
-  @Output() signIn = new EventEmitter<Event>();
-  @Output() signUp = new EventEmitter<Event>();
+  // @Output() signIn = new EventEmitter<Event>();
+  // @Output() signUp = new EventEmitter<Event>();
   @Output() userMenuItemSelected = new EventEmitter<MenuItem>();
+  @Output() notificationButtonClick = new EventEmitter<void>();
 
   private _sections: { [key: string]: Section } = {};
   sectionsKeys: string[] = [];
@@ -39,5 +40,9 @@ export class NavbarComponent {
 
   selectUserMenuItem(menuItem: MenuItem) {
     this.userMenuItemSelected.emit(menuItem);
+  }
+
+  clickNotificationButton(): void {
+    this.notificationButtonClick.emit();
   }
 }
