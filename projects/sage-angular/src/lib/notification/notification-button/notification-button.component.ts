@@ -22,7 +22,7 @@ export class NotificationButtonComponent implements OnInit, OnDestroy {
     this.subscriptions.push(notificationsCountSub);
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     this.subscriptions.forEach(sub => sub.unsubscribe());
   }
 }
