@@ -2,8 +2,6 @@
 import { setCompodocJson } from "@storybook/addon-docs/angular";
 import docJson from "../documentation.json";
 
-// import '!style-loader!css-loader!sass-loader!../projects/sage-angular-demo/src/styles.scss';
-
 // TODO Should work without any
 setCompodocJson(docJson as any);
 
