@@ -43,7 +43,7 @@
     "@angular/cli": "~12.1.4",
     "@angular/compiler-cli": "~12.1.4",
     "@babel/core": "^7.14.6",
-    "@compodoc/compodoc": "^1.1.11",
+    "@compodoc/compodoc": "^1.1.18",
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/angular": "^6.3.7",
     "@storybook/builder-webpack5": "^6.3.7",
