@@ -23,7 +23,7 @@ of the library `@sage-bionetworks/sage-angular`. The two projects included are:
 
 Version | Demo app | Storybook
 ------- | -------- | ---------
-1.4.0   | [Demo app](https://sage-bionetworks.github.io/sage-angular/1.4.0/demo/) | [Storybook](https://sage-bionetworks.github.io/sage-angular/1.4.0/storybook/)
+2.0.0   | [Demo app](https://sage-bionetworks.github.io/sage-angular/2.0.0/demo/) | [Storybook](https://sage-bionetworks.github.io/sage-angular/2.0.0/storybook/)
 Edge   | [Demo app](https://sage-bionetworks.github.io/sage-angular/edge/demo/) | [Storybook](https://sage-bionetworks.github.io/sage-angular/edge/storybook/)
 
 ## Installation
