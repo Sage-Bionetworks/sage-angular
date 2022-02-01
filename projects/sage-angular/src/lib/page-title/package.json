@@ -1,8 +1,2 @@
 {
-  "ngPackage": {
-    "lib": {
-      "entryFile": "public-api.ts",
-      "cssUrl": "inline"
-    }
-  }
 }

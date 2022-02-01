@@ -2,9 +2,8 @@
 import { setCompodocJson } from "@storybook/addon-docs/angular";
 import docJson from "../documentation.json";
 
-import '!style-loader!css-loader!sass-loader!../projects/sage-angular-demo/src/styles.scss';
-
-setCompodocJson(docJson);
+// TODO Should work without any
+setCompodocJson(docJson as any);
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

@@ -3,7 +3,9 @@
   "compilerOptions": {
     "types": [
       "node"
-    ]
+    ],
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
   },
   "exclude": [
     "../src/test.ts",
@@ -13,9 +15,11 @@
   ],
   "include": [
     "../src/**/*",
-    "../projects/**/*"
+    "../projects/**/*",
+    "../stories/**/*",
   ],
   "files": [
-    "./typings.d.ts"
+    "./typings.d.ts",
+    "./preview.ts",
   ]
 }

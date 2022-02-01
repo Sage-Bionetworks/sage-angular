@@ -166,6 +166,21 @@
               "devServerTarget": "sage-angular-demo:serve:production"
             }
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "browserTarget": "sage-angular-demo:build",
+            "port": 4400,
+            "compodoc": true
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "browserTarget": "sage-angular-demo:build",
+            "compodoc": true
+          }
         }
       }
     }
